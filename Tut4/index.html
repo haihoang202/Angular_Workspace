@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Tutorial 4</title>
+    <style media="screen">
+      [ng\:cloak], .ng-cloak, [ng-cloak]{
+        display: none;
+      }
+      .thick{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="" ng-controller="mainCtrl">
+      <!-- <ul>
+        <li ng-repeat="item in weather">
+          {{item.day+": "}}{{item.rain | raining}}
+        </li>
+      </ul>
+      <br><br> -->
+      <ul jql-directive>
+            <li id="hoang">Hoang Pham</li>
+            <ul>
+              <li>AVG: .298</li>
+              <li>HR: 751</li>
+              <li>OBP: .444</li>
+            </ul>
+            <li id="hieu">Hoa Hieu</li>
+            <ul>
+              <li>AVG: .598</li>
+              <li>HR: 598</li>
+              <li>OBP: .152</li>
+            </ul>
+            <li id="cau">Kim Khanh</li>
+            <ul>
+              <li>AVG: .256</li>
+              <li>HR: 648</li>
+              <li>OBP: .256</li>
+            </ul>
+      </ul>
+      <h4>Children in List</h4>
+      <span id="childrenList"></span><br><br>
+      Hoang's Number: <span id="hoangNumber"></span><br><br>
+      Is Hoa Hieu Bold: <span id="hieuBold"></span><br><br>
+      Hoang's ID: <span id="hoangId"></span><br><br>
+      <button type="button" name="button" ng-click="unBold()">Toggle Bold</button>
+
+      <!-- <div class="" bb-player-list="bbPlayers"
+      array-item="name | uppercase">
+
+      </div> -->
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="E:/My Workspace/AngularJS_Workplace/Tut4/js/app.js"></script>
+    <script type="text/javascript" src="E:/My Workspace/AngularJS_Workplace/Tut4/js/filters.js"></script>
+
+  </body>
+</html>

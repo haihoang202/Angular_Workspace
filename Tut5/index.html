@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Tutorial 5</title>
+    <style media="screen">
+      [ng\:cloak], [ng-cloak], .ng-cloak{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="" ng-controller="mainCtrl">
+
+      <div class="" bb-player-list="bbPlayers"
+      array-item="name | uppercase">
+
+      </div>
+
+      <player name="hoangpham"></player>
+
+      <table>
+        <tbody>
+          <tr ng-repeat="player in bbPlayers">
+            <td>
+              {{player.name}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="E:/My Workspace/AngularJS_Workplace/Tut5/js/app.js"></script>
+  </body>
+</html>

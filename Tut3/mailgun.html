@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="mailapp">
+  <head>
+    <meta charset="utf-8">
+    <title>Mail Gun Dashboard</title>
+    <style media="screen">
+      [ng\:cloak], [ng-cloak], .ng-cloak {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Hoang Dashboard
+    </p>
+    <div ng-controller='mailCtrl'>
+      <button type="button" name="button" ng-click = "logFilter = {type: 'info'}">Info</button>
+      <button type="button" name="button" ng-click = "logFilter = {type: 'warning'}">Warning</button>
+      <button type="button" name="button" ng-click = "logFilter = {type: 'error'}">Error</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Summary</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="log in logs|filter: logFilter">
+            <td>{{log.summary}}</td>
+            <td>{{log.type}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="E:/My Workspace/AngularJS_Workplace/Tut3/js/app2.js"></script>
+
+  </body>
+</html>
